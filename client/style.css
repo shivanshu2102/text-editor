@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0d3973;
+  }
+  .main-container{
+    display: flex;
+    position: relative;
+ justify-content: center;
+ align-items: center;
+height: 100vh;
+width: 100vw;
+  }
+  .container {
+    background-color: #ffffff;
+    width: 60%;
+    padding: 50px 30px;
+   position: absolute;
+   left: 35%;
+   top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+  }
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+  button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    color: #020929;
+  }
+  select {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+  }
+  .options label,
+  .options select {
+    font-family: "Poppins", sans-serif;
+  }
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
+  #text-input {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 50vh;
+  }
+  .active {
+    background-color: #e0e9ff;
+  }
+  .user-info-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    position: absolute;
+    right: 5%;
+    top: 13%;
+    border-radius: 5px;
+    margin-left: 20px; /* Adjust the margin as per your layout */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    height:73%;
+    
+  }
+  
+  .user-info-container h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+ 
+  
+  /* .user-list {
+   
+  } */
+  .message-container {
+  
+    position: absolute;
+    /* top: 20px; */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ffffff;
+    /* color: #ffffff; */
+    border: none;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+ .message-container p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+.text-container{
+   position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: #ffffff;
+       color: #000000; 
+      border: none;
+      border-radius: 5px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+/* Style for shared cursor */
+#shared-cursor {
+  position: absolute;
+  width: 10px; /* Adjust cursor size as needed */
+  height: 10px; /* Adjust cursor size as needed */
+  background-color: rgb(229, 0, 0); /* Cursor color */
+  border-radius: 50%; /* Make cursor a circle */
+  z-index: 999; /* Ensure cursor appears above other content */
+}
